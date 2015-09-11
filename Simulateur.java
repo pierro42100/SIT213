@@ -67,9 +67,9 @@ public class Simulateur {
 
 		analyseArguments(args);
 
-		////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////
 		//Instanciation de tous les objets utiles � la simulation de la cha�ne de transmission//
-		////////////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////
 
 		//Source
 		if (seed == null)//donn�es fixes
@@ -78,7 +78,7 @@ public class Simulateur {
 		}
 		else//donn�es al�atoires
 		{
-			source = new SourceAleatoire();
+			source = new SourceAleatoire(messageString, seed);
 		}
 
 		//Transmetteur
@@ -105,7 +105,7 @@ public class Simulateur {
 		transmetteurLogique.connecter(destination);
 		
 		//Source --> Sondes
-		source.connecter(sonde2);
+		transmetteurLogique.connecter(sonde2);
 
 
 	}

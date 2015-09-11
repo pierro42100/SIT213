@@ -23,7 +23,7 @@ public class SourceFixe extends Source <Boolean> {
 
 		}
 
-		informationEmise = new Information(tabMessage) ;
+		informationGeneree= new Information<Boolean>(tabMessage) ;
 		
 	}
 	
