@@ -8,9 +8,9 @@ public class TransmetteurParfait extends Transmetteur <Boolean,Boolean> {
 
 	
 	/**
-	    * re�oit une information. 
-		 * Cette m�thode, en fin d'ex�cution, appelle la m�thode �mettre.
-	    * @param information  l'information  re�ue
+	    * reeoit une information. 
+		 * Cette methode, en fin d'execution, appelle la methode emettre.
+	    * @param information  l'information  reeue
 	    */
 	       public void recevoir(Information <Boolean> info) throws InformationNonConforme{
 	    	  
@@ -20,7 +20,7 @@ public class TransmetteurParfait extends Transmetteur <Boolean,Boolean> {
 	      
 	   
 	    /**
-	    * �met l'information construite par le transmetteur  
+	    * emet l'information construite par le transmetteur  
 	    */
 	      public void emettre() throws InformationNonConforme{  
 	    	  
