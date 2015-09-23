@@ -89,7 +89,7 @@ public class Simulateur {
 
 		//Sondes logiques
 		sonde1 = new SondeLogique("Sonde 1 : Source", nbBitsMess);
-		sonde2 = new SondeLogique("Sonde 2 : Source", nbBitsMess);
+		sonde2 = new SondeLogique("Sonde 2 : Transmetteur", nbBitsMess);
 
 		///////////////////////////////////////////////////////////////////
 		//Connexions des differents elements de la chaine de transmission//
@@ -212,7 +212,7 @@ public class Simulateur {
 		//Recuperation de l'information emise par la source
 		Information infoEmiseSource = source.getInformationEmise();	
 		
-		//Recuperation de l'information reeue par la destination
+		//Recuperation de l'information reçue par la destination
 		Information infoRecueDestination = destination.getInformationRecue();
 		
 		int nbBits = infoEmiseSource.nbElements();
@@ -227,7 +227,7 @@ public class Simulateur {
 			
 		}
 		
-		return  nbBitsErrones/nbBits;
+		return  (float)(nbBitsErrones/nbBits);
 	}
 
 

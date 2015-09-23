@@ -7,7 +7,8 @@ public class SourceAleatoire extends Source <Boolean> {
 
 	public SourceAleatoire (String messageString, Integer seed){
 		
-		super();	
+		super();
+		
 		int i;
 		
 		Random random = new Random(seed);
