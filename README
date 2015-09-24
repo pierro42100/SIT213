@@ -1,0 +1,19 @@
+SIT 213 - Chaine de transmission
+
+Pour compiler les classes java et générer la javadoc :
+./compilejavadoc.sh
+
+Pour éxecuter le jeu de tests :
+./starttest.sh
+
+Le jeu de test est composé comme suit :
+1) 5 tests pour la source fixe avec des messages différents
+2) 5 tests pour la source aléatoire avec :
+	- une génération de 4 bits aléatoires (seed = 1)
+	- une génération de 8 bits aléatoires (seed = 2)
+	- une génération de 16 bits aléatoires (seed = 2)
+	- une génération de 16 bits aléatoires (seed = 2)
+	- une génération de 16 bits aléatoires (seed = 3) 
+	Le signal généré par le troisième et quatrième test sont identiques.
+
+
