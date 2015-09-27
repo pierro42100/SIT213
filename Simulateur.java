@@ -1,4 +1,5 @@
 
+
 import sources.*;
 import destinations.*;
 import transmetteurs.*;
@@ -35,9 +36,9 @@ public class Simulateur {
 	private          boolean aleatoireAvecGerme = false;
 	/** la valeur de la semence utilisee pour les generateurs aleatoires */
 	private          Integer seed = null;
-	/** la longueur du message aleatoire ‡ transmettre si un message n'est pas impose */
+	/** la longueur du message aleatoire √† transmettre si un message n'est pas impose */
 	private          int nbBitsMess = 100; 
-	/** la chaine de caracteres correspondant ‡ m dans l'argument -mess m */
+	/** la chaine de caracteres correspondant √† m dans l'argument -mess m */
 	private          String messageString = "100";
 
 
@@ -68,7 +69,7 @@ public class Simulateur {
 		analyseArguments(args);
 
 		////////////////////////////////////////////////////////////////////////////////////////////
-		//Instanciation de tous les objets utiles ‡ la simulation de la chaine de transmission//
+		//Instanciation de tous les objets utiles √† la simulation de la chaine de transmission//
 		////////////////////////////////////////////////////////////////////////////////////////////
 
 		//Source
@@ -112,19 +113,19 @@ public class Simulateur {
 
 
 	/** La methode analyseArguments extrait d'un tableau de chaines de caracteres les differentes options de la simulation. 
-	 * Elle met ‡ jour les attributs du Simulateur.
+	 * Elle met √† jour les attributs du Simulateur.
 	 *
 	 * @param args le tableau des differents arguments.
 	 * <br>
 	 * <br>Les arguments autorises sont : 
 	 * <br> 
 	 * <dl>
-	 * <dt> -mess m  </dt><dd> m (String) constitue de 7 ou plus digits 0 | 1, le message ‡ transmettre</dd>
-	 * <dt> -mess m  </dt><dd> m (int) constitue de 1 ‡ 6 digits, le nombre de bits du message "aleatoire" ‡ transmettre</dd> 
+	 * <dt> -mess m  </dt><dd> m (String) constitue de 7 ou plus digits 0 | 1, le message √† transmettre</dd>
+	 * <dt> -mess m  </dt><dd> m (int) constitue de 1 √† 6 digits, le nombre de bits du message "aleatoire" √† transmettre</dd> 
 	 * <dt> -s </dt><dd> utilisation des sondes d'affichage</dd>
 	 * <dt> -seed v </dt><dd> v (int) d'initialisation pour les generateurs aleatoires</dd> 
 	 * <br>
-	 * <dt> -form f </dt><dd>  codage (String) RZ, NRZR, NRZT, la forme d'onde du signal ‡ transmettre (RZ par dÈfaut)</dd>
+	 * <dt> -form f </dt><dd>  codage (String) RZ, NRZR, NRZT, la forme d'onde du signal √† transmettre (RZ par d√àfaut)</dd>
 	 * <dt> -nbEch ne </dt><dd> ne (int) le nombre d'echantillons par bit (ne >= 6 pour du RZ, ne >= 9 pour du NRZT, ne >= 18 pour du RZ,  30 par defaut))</dd>
 	 * <dt> -ampl min max </dt><dd>  min (float) et max (float), les amplitudes min et max du signal analogique e transmettre ( min < max, 0.0 et 1.0 par defaut))</dd> 
 	 * <br>
@@ -189,7 +190,7 @@ public class Simulateur {
 
 
 
-	/** La methode execute effectue un envoi de message par la source de la chaene de transmission du Simulateur. 
+	/** La methode execute effectue un envoi de message par la source de la chaine de transmission du Simulateur. 
 	 * @return les options explicites de simulation.
 	 *
 	 * @throws Exception si un probleme survient lors de l'execution
@@ -203,7 +204,7 @@ public class Simulateur {
 
 
 
-	/** La methode qui calcule le taux d'erreur binaire en comparant les bits du message emis avec ceux du message reeu.
+	/** La methode qui calcule le taux d'erreur binaire en comparant les bits du message emis avec ceux du message re√ßu.
 	 *
 	 * @return  La valeur du Taux dErreur Binaire.
 	 */   	   
@@ -212,7 +213,7 @@ public class Simulateur {
 		//Recuperation de l'information emise par la source
 		Information infoEmiseSource = source.getInformationEmise();	
 		
-		//Recuperation de l'information reÁue par la destination
+		//Recuperation de l'information re√Åue par la destination
 		Information infoRecueDestination = destination.getInformationRecue();
 		
 		int nbBits = infoEmiseSource.nbElements();

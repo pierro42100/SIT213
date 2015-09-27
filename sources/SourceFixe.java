@@ -2,7 +2,17 @@ package sources;
 
 import information.*;
 
+/** 
+ * Classe public d'un composant source d'informations fixes 
+ * @author P. Chovelon, M. Corre
+ */
 public class SourceFixe extends Source <Boolean> {
+	
+	/**
+	 * transforme le message messageString en tableau de booléens
+	 * 
+	 * @param messageString le message
+	 */
 
 	public SourceFixe (String messageString){
 		super();	
